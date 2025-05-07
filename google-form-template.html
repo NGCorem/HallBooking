@@ -1,0 +1,145 @@
+<!--
+This is a template to help you structure your Google Form.
+Copy these field names when creating your actual Google Form.
+-->
+
+<!-- Form Title -->
+<h1>Community Hall Booking Request</h1>
+<p>Please complete this form to request a booking for the community hall.</p>
+
+<!-- Personal Information Section -->
+<h2>Personal Information</h2>
+
+<!-- Name Field -->
+<div class="form-group">
+  <label for="name">Full Name *</label>
+  <input type="text" id="name" name="name" required>
+</div>
+
+<!-- Email Field -->
+<div class="form-group">
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="email" required>
+</div>
+
+<!-- Phone Field -->
+<div class="form-group">
+  <label for="phone">Phone Number *</label>
+  <input type="tel" id="phone" name="phone" required>
+</div>
+
+<!-- Organization Field -->
+<div class="form-group">
+  <label for="organization">Organization (if applicable)</label>
+  <input type="text" id="organization" name="organization">
+</div>
+
+<!-- Booking Details Section -->
+<h2>Booking Details</h2>
+
+<!-- Event Name Field -->
+<div class="form-group">
+  <label for="event-name">Event Name/Type *</label>
+  <input type="text" id="event-name" name="event-name" required>
+</div>
+
+<!-- Date Field -->
+<div class="form-group">
+  <label for="event-date">Event Date *</label>
+  <input type="date" id="event-date" name="event-date" required>
+</div>
+
+<!-- Start Time Field -->
+<div class="form-group">
+  <label for="start-time">Start Time *</label>
+  <input type="time" id="start-time" name="start-time" required>
+</div>
+
+<!-- End Time Field -->
+<div class="form-group">
+  <label for="end-time">End Time *</label>
+  <input type="time" id="end-time" name="end-time" required>
+</div>
+
+<!-- Setup Time Field -->
+<div class="form-group">
+  <label for="setup-time">Setup Time Required (hours before event)</label>
+  <select id="setup-time" name="setup-time">
+    <option value="0">No setup time needed</option>
+    <option value="0.5">30 minutes</option>
+    <option value="1">1 hour</option>
+    <option value="2">2 hours</option>
+  </select>
+</div>
+
+<!-- Attendees Field -->
+<div class="form-group">
+  <label for="attendees">Expected Number of Attendees *</label>
+  <input type="number" id="attendees" name="attendees" min="1" max="120" required>
+</div>
+
+<!-- Event Description Field -->
+<div class="form-group">
+  <label for="description">Event Description *</label>
+  <textarea id="description" name="description" rows="4" required></textarea>
+</div>
+
+<!-- Requirements Section -->
+<h2>Additional Requirements</h2>
+
+<!-- Facilities Needed Field -->
+<div class="form-group">
+  <label>Facilities Needed (select all that apply)</label>
+  <div class="checkbox-group">
+    <input type="checkbox" id="kitchen" name="facilities" value="kitchen">
+    <label for="kitchen">Kitchen</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="projector" name="facilities" value="projector">
+    <label for="projector">Projector</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="sound-system" name="facilities" value="sound-system">
+    <label for="sound-system">Sound System</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="tables" name="facilities" value="tables">
+    <label for="tables">Tables</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="chairs" name="facilities" value="chairs">
+    <label for="chairs">Chairs</label>
+  </div>
+</div>
+
+<!-- Special Requirements Field -->
+<div class="form-group">
+  <label for="special-requirements">Any Special Requirements</label>
+  <textarea id="special-requirements" name="special-requirements" rows="3"></textarea>
+</div>
+
+<!-- Terms and Conditions Section -->
+<h2>Terms and Conditions</h2>
+
+<!-- Terms Acceptance Field -->
+<div class="form-group">
+  <div class="checkbox-group">
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I have read and agree to the Terms and Conditions for hall usage *</label>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="checkbox-group">
+    <input type="checkbox" id="cleanup" name="cleanup" required>
+    <label for="cleanup">I understand that I am responsible for cleaning the hall after the event *</label>
+  </div>
+</div>
+
+<!-- Submit Button -->
+<div class="form-group">
+  <button type="submit">Submit Booking Request</button>
+</div>
+
+<p>* Required fields</p>
+<p>Note: This booking request will be reviewed. You will receive a confirmation email once your booking is approved.</p>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hall Booking System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Community Hall Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#availability">Check Availability</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Book Our Community Hall for Your Events</h2>
+            <p>Perfect for meetings, celebrations, workshops, and community gatherings</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Hall Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Capacity</h3>
+                    <p>Up to 120 people with flexible seating arrangements</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Amenities</h3>
+                    <p>Free Wi-Fi, projector, sound system, and kitchen facilities</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Parking</h3>
+                    <p>40 free parking spaces available on-site</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wheelchair"></i>
+                    <h3>Accessibility</h3>
+                    <p>Wheelchair accessible with ramp entrance and accessible facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="availability" class="availability">
+        <div class="container">
+            <h2>Check Availability</h2>
+            <p>View our current availability calendar below:</p>
+            <div class="calendar-container">
+                <!-- Google Calendar iframe will be embedded here -->
+                <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIMEZONE&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book the Hall</h2>
+            <p>Fill out the form below to request a booking:</p>
+            <div class="form-container">
+                <!-- Google Form iframe will be embedded here -->
+                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Community Road, Melbourne, VIC 3000</p>
+                    <p><i class="fas fa-phone"></i> (03) 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> booking@communityhall.com.au</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="map">
+                    <!-- Google Maps embed will go here -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUyJzI2LjgiUyAxNDnCsDA3JzU5LjYiRQ!5e0!3m2!1sen!2sau!4v1620160000000!5m2!1sen!2sau" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Community Hall Booking System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
