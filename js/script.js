@@ -107,4 +107,55 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Trigger scroll event on load to check for visible elements
     window.dispatchEvent(new Event('scroll'));
+
+    // Carousel functionality
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // Auto-advance carousel every 5 seconds
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+});
+
+// Carousel functions (outside of DOMContentLoaded)
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // Remove active class from current slide and indicator
+    slides[currentSlideIndex].classList.remove('active');
+    indicators[currentSlideIndex].classList.remove('active');
+    
+    // Calculate new slide index
+    currentSlideIndex += direction;
+    
+    // Wrap around if necessary
+    if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = 0;
+    } else if (currentSlideIndex < 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+    
+    // Add active class to new slide and indicator
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
+}
+
+function currentSlide(index) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // Remove active class from current slide and indicator
+    slides[currentSlideIndex].classList.remove('active');
+    indicators[currentSlideIndex].classList.remove('active');
+    
+    // Set new slide index
+    currentSlideIndex = index - 1;
+    
+    // Add active class to new slide and indicator
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
+}
 });
