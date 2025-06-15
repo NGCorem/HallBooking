@@ -96,14 +96,15 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 10px; /* Reduced from 20px */
 }
 
 nav ul li a {
     color: var(--dark-color);
     font-weight: 500;
-    padding: 8px 15px;
+    padding: 6px 10px; /* Reduced from 8px 15px */
     border-radius: 4px;
+    font-size: 0.85rem; /* Smaller font size */
 }
 
 nav ul li a:hover {
@@ -114,7 +115,16 @@ nav ul li a.active {
     background-color: var(--primary-color);
     color: var(--light-color);
 }
-
+@media (max-width: 1300px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+    }
+}
 /* Hero Section */
 .hero {
     background-color: var(--primary-color);
