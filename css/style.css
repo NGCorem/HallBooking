@@ -115,8 +115,7 @@ nav ul li a.active {
     color: var(--light-color);
 }
 
-/* Hero Section with Carousel */
-/* Hero Section - Back to Original */
+/* Hero Section */
 .hero {
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -239,31 +238,6 @@ nav ul li a.active {
     transform: scale(1.2);
 }
 
-/* Mobile Adjustments for Gallery */
-@media (max-width: 768px) {
-    .carousel {
-        height: 300px;
-    }
-    
-    .carousel-btn {
-        padding: 10px 15px;
-        font-size: 1rem;
-    }
-    
-    .prev-btn {
-        left: 10px;
-    }
-    
-    .next-btn {
-        right: 10px;
-    }
-    
-    .indicator {
-        width: 12px;
-        height: 12px;
-    }
-}
-
 /* Buttons */
 .btn {
     display: inline-block;
@@ -341,7 +315,7 @@ nav ul li a.active {
 
 /* Hire Information Section */
 .hire-info {
-    background-color: var(--light-color);
+    background-color: var(--bg-color);
 }
 
 .pricing-grid {
@@ -352,7 +326,7 @@ nav ul li a.active {
 }
 
 .pricing-card {
-    background-color: #f9fbfe;
+    background-color: var(--light-color);
     padding: 30px 20px;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -390,7 +364,7 @@ nav ul li a.active {
 }
 
 .hire-details {
-    background-color: #f9fbfe;
+    background-color: var(--light-color);
     padding: 30px;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -427,7 +401,7 @@ nav ul li a.active {
 
 /* Contact Section */
 .contact {
-    background-color: var(--bg-color);
+    background-color: var(--light-color);
 }
 
 .contact-grid {
@@ -437,7 +411,7 @@ nav ul li a.active {
 }
 
 .contact-info {
-    background-color: var(--light-color);
+    background-color: #f9fbfe;
     padding: 30px;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -505,12 +479,16 @@ footer {
         margin: 0 5px;
     }
     
-    .hero-content h2 {
+    .hero h2 {
         font-size: 2rem;
     }
     
     section {
         padding: 60px 0;
+    }
+    
+    .carousel {
+        height: 300px;
     }
     
     .carousel-btn {
@@ -524,6 +502,11 @@ footer {
     
     .next-btn {
         right: 10px;
+    }
+    
+    .indicator {
+        width: 12px;
+        height: 12px;
     }
 }
 
