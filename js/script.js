@@ -6,8 +6,23 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
             
+            // Handle home button (scroll to top)
+            if (targetId === '#') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav link
+                document.querySelectorAll('nav a').forEach(navLink => {
+                    navLink.classList.remove('active');
+                });
+                this.classList.add('active');
+                return;
+            }
+            
+            // Handle other anchor links
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
