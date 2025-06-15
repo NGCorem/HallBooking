@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narrawong Mechanics Institute Hall</title>
+    <title>Community Hall Booking System</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Narrawong Mechanics Institute Hall</h1>
+            <h1>Community Hall Booking</h1>
             <nav>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#availability">Check Availability</a></li>
                     <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#hire-info">Hire Rates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -37,7 +38,7 @@
                 <div class="feature-card">
                     <i class="fas fa-users"></i>
                     <h3>Capacity</h3>
-                    <p>Maximum capacity 200 people with flexible seating arrangements for up to 100</p>
+                    <p>Up to 120 people with flexible seating arrangements</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-wifi"></i>
@@ -45,9 +46,9 @@
                     <p>Free Wi-Fi, projector, sound system, and kitchen facilities</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-tree"></i>
-                    <h3>Oudoor Space</h3>
-                    <p>Large outdoor space</p>
+                    <i class="fas fa-car"></i>
+                    <h3>Parking</h3>
+                    <p>40 free parking spaces available on-site</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-wheelchair"></i>
@@ -64,7 +65,7 @@
             <p>View our current availability calendar below:</p>
             <div class="calendar-container">
                 <!-- Google Calendar iframe will be embedded here -->
-                <iframe src="https://calendar.google.com/calendar/embed?src=472c0392f3a67f53ee1d8790a145b67042984f1b46ea1a43772ed50b43fefae7@group.calendar.google.com&ctz=Australia/Melbourne&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIMEZONE&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </section>
@@ -75,7 +76,48 @@
             <p>Fill out the form below to request a booking:</p>
             <div class="form-container">
                 <!-- Google Form iframe will be embedded here -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdss9zPIEymbKKAqW6CQ-r2DYmMvo9GBJTCTJC_WN83EuYPEQ/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="hire-info" class="hire-info">
+        <div class="container">
+            <h2>Hire Information</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hourly Rate</h3>
+                    <div class="price">$20</div>
+                    <p>Per hour</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Half Day</h3>
+                    <div class="price">$75</div>
+                    <p>Up to 4 hours</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Full Day</h3>
+                    <div class="price">$150</div>
+                    <p>8+ hours</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Children's Party</h3>
+                    <div class="price">$50</div>
+                    <p>Special rate</p>
+                </div>
+            </div>
+            <div class="hire-details">
+                <h3>Booking Information</h3>
+                <ul>
+                    <li>All rates include basic cleaning</li>
+                    <li>Bond may be required for some events</li>
+                    <li>Kitchen facilities available at no extra charge</li>
+                    <li>Setup and pack down time included in booking</li>
+                </ul>
             </div>
         </div>
     </section>
